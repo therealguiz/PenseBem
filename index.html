@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pense Bem - Sonic & Knuckles</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <video id="video-bg" autoplay loop muted>
+        <source src="Vídeos/SonicPenseBem.mp4" type="video/mp4">
+    </video>
+
+    <audio id="som-missao-completa" src="Sons/MissionCompleteSFX.mp3"></audio>
+    <audio id="som-acerto" src="Sons/acertarQuestaoSfx.mp3"></audio>
+    <audio id="som-erro" src="Sons/errarQuestaoSfx.mp3"></audio>
+
+    <div class="content-wrapper">
+        <div class="score" id="scorediv">
+            <div class="score-container">
+                <img src="Imagens/cena.gif" alt="Painel de pontos" class="points-image">
+                <div class="score-content">
+                    <img src="Imagens/coin.gif" alt="Gif de moeda" class="coin-gif">
+                    <h2 id="pontos">0</h2>
+                </div>
+            </div>
+            <div class="pontuacao hidden">
+                <img src="Imagens/tentativas.jpg" alt="Painel de perguntas e tentativas" class="no-question">
+                <div class="no-question-content">
+                    <h2 id="pergunta-numero">0</h2>
+                    <h2 id="tentativas-restantes">0</h2>
+                </div>
+                
+            </div>
+        </div>
+        <div class="main-container" id="content">
+            <img src="Imagens/Título Pense Bem.png" alt="Título Pense Bem" class="title-image">
+            
+            <div class="search-container">
+                <input type="text" class="search-bar" id="codigo" placeholder="Digite o código aqui. Ex.: 081">
+                <button id="iniciar" onclick="iniciarQuiz()">Iniciar/Reiniciar</button>
+            </div>
+          
+        
+             <div class="container">
+                <button class="button red" id="botaoA">A</button>
+                <button class="button yellow" id="botaoB">B</button>
+                <button class="button blue" id="botaoC">C</button>
+                <button class="button green" id="botaoD">D</button>
+            </div>
+        </div>
+        
+        <div class="imagens">
+            <img src="Imagens/QUESTIONS painel.jpg" alt="Painel de Perguntas" class="question-image" id="question-image">
+            <img id="imagem-pergunta" src="Imagens/capa.png" alt="Pergunta" >
+        </div>
+    </div>
+    
+    
+
+</body>
+</html>
